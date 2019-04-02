@@ -29,8 +29,6 @@ function loade_all_packages(tomlpath=nothing)
         if pkg.name in [
                 "IPython"
                 "PyPlot"
-                "FileWatching"
-                "JuliaInterpreter"
                 "Revise"
                 ]
             # avoid "Task cannot be serialized"
