@@ -72,6 +72,12 @@ git-tree-sha1 = "d12425c0187189a6f2fabc5eea9f22f25d365049"
 uuid = "28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71"
 version = "0.36.0"
 
+[[HeaderREPLs]]
+deps = ["REPL", "Test"]
+git-tree-sha1 = "02a6f6a18aed92f9838212b40ca8eadcc90da25e"
+uuid = "54d51984-71c9-52bd-8df9-6718e63e4153"
+version = "0.3.0"
+
 [[IPython]]
 deps = ["Compat", "Conda", "InteractiveUtils", "Pkg", "PyCall", "REPL", "Test", "Unicode"]
 git-tree-sha1 = "8d648a84eca67a5080180cc5ad326c0c75c7067a"
@@ -197,6 +203,12 @@ uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
 [[Random]]
 deps = ["Serialization"]
 uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[[Rebugger]]
+deps = ["CodeTracking", "HeaderREPLs", "InteractiveUtils", "JuliaInterpreter", "Pkg", "REPL", "Revise", "Test", "UUIDs"]
+git-tree-sha1 = "627b37f9fdee3c10b649ff61974f3e746b5e7b53"
+uuid = "ee283ea6-eecd-56e3-beb3-83eb4d3c31e9"
+version = "0.3.0"
 
 [[RecipesBase]]
 deps = ["Random", "Test"]
