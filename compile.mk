@@ -2,7 +2,8 @@ JULIA ?= $(shell which julia)
 JULIA_OPTIONS ?= --color=yes
 JULIA_CMD = $(JULIA) $(JULIA_OPTIONS) --startup-file=no
 
-O ?= build/$(shell $(JULIA_CMD) -e 'print(VERSION)')
+O ?= build/$(shell $(JULIA_CMD) \
+    -e 'print(VERSION.major, ".", VERSION.minor, ".", VERSION.patch)')
 
 $(O)/sys.so: compile.jl precompile.jl $(O)/Manifest.toml
 	$(JULIA_CMD) --project=$(O) $< $@
