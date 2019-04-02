@@ -1,0 +1,1 @@
+include ../lib/compile.mk
