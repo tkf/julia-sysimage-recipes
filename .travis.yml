@@ -5,6 +5,9 @@ os:
 julia:
   - 1.1
   - nightly
+env:
+  - TARGET=python
+  - TARGET=plots
 matrix:
   allow_failures:
     - julia: nightly
@@ -19,5 +22,4 @@ before_script:
     '
 
 script:
-  - make -C python
-  - make -C plots
+  - make -C $TARGET
