@@ -14,6 +14,13 @@ function sorted_packages(project=nothing)
     return packages
 end
 
+"""
+    loade_all_packages(tomlpath=nothing)
+
+Load packages in `tomlpath` ordered by dependency.
+
+See: https://github.com/JuliaLang/PackageCompiler.jl/issues/192
+"""
 function loade_all_packages(tomlpath=nothing)
     for pkg in sorted_packages(tomlpath)
         @debug "Loading $pkg"
