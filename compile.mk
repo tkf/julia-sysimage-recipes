@@ -10,7 +10,7 @@ $(O)/sys.so: compile.jl precompile.jl $(O)/Manifest.toml
 $(O)/Manifest.toml: Project.toml
 	mkdir -pv $(O)
 	cp -t $(O) -v Project.toml
-	cp -t $(O) -f -v Manifest.toml
+	-cp -t $(O) -v Manifest.toml
 	$(JULIA_CMD) --project=$(O) -e "using Pkg; Pkg.instantiate()"
 
 repl:
