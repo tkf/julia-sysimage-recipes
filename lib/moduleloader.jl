@@ -26,7 +26,13 @@ function loade_all_packages(tomlpath=nothing)
         @debug "Loading $pkg"
         mod = Base.require(pkg)
 
-        if pkg.name in ["IPython", "PyPlot"]
+        if pkg.name in [
+                "IPython"
+                "PyPlot"
+                "FileWatching"
+                "JuliaInterpreter"
+                "Revise"
+                ]
             # avoid "Task cannot be serialized"
             precompile(mod.__init__, ())
             continue
