@@ -13,6 +13,12 @@ matrix:
 notifications:
   email: false
 
+before_script:
+  - julia --color=yes -e '
+    using Pkg;
+    Pkg.add("PackageCompiler")
+    '
+
 script:
   - make -C python
   - make -C plots
