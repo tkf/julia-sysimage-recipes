@@ -29,7 +29,6 @@ function loade_all_packages(tomlpath=nothing)
         if pkg.name in [
                 "IPython"
                 "PyPlot"
-                "Revise"
                 ]
             # avoid "Task cannot be serialized"
             precompile(mod.__init__, ())
