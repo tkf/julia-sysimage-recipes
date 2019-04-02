@@ -5,6 +5,17 @@ JULIA_CMD = $(JULIA) $(JULIA_OPTIONS) --startup-file=no
 O ?= build/$(shell $(JULIA_CMD) \
     -e 'print(VERSION.major, ".", VERSION.minor, ".", VERSION.patch)')
 
+.PHONY: build rebuild clean repl
+
+build: $(O)/sys.so
+
+rebuild:
+	rm -f $(O)/sys.so
+	$(MAKE) build
+
+clean:
+	rm -rfv $(O)
+
 $(O)/sys.so: compile.jl precompile.jl $(O)/Manifest.toml
 	$(JULIA_CMD) --project=$(O) $< $@
 
