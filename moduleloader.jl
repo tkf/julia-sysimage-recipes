@@ -19,7 +19,7 @@ function loade_all_packages(tomlpath=nothing)
         @debug "Loading $pkg"
         mod = Base.require(pkg)
 
-        if pkg.name == "IPython"  # TODO: don't
+        if pkg.name in ["IPython", "PyPlot"]
             # avoid "Task cannot be serialized"
             precompile(mod.__init__, ())
             continue
