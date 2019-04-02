@@ -8,6 +8,7 @@ julia:
 env:
   - TARGET=python
   - TARGET=plots
+  - TARGET=all
 matrix:
   allow_failures:
     - julia: nightly

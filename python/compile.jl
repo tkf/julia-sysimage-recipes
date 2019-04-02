@@ -5,7 +5,7 @@ using PackageCompiler
 
 systmp, _curr_syso = compile_incremental(
     joinpath(outdir, "Project.toml"),
-    joinpath(@__DIR__, "precompile.jl"),
+    joinpath(@__DIR__, "precompile_wrapper.jl"),
 )
 
 cp(systmp, sysout, force=true)
