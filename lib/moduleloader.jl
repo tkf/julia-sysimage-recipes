@@ -30,6 +30,7 @@ function loade_all_packages(tomlpath=nothing)
                 "IPython"
                 "PyPlot"
                 "Revise"
+                "Rebugger"
                 ]
             # avoid "Task cannot be serialized"
             precompile(mod.__init__, ())
