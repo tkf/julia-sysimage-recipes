@@ -9,6 +9,7 @@ env:
   - TARGET=python
   - TARGET=plots
   - TARGET=all
+  - TARGET=rebugger
 matrix:
   allow_failures:
     - julia: nightly
