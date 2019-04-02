@@ -23,6 +23,13 @@ See: https://github.com/JuliaLang/PackageCompiler.jl/issues/192
 """
 function loade_all_packages(tomlpath=nothing)
     for pkg in sorted_packages(tomlpath)
+        if pkg.name in [
+                "DiffBase"
+                ]
+            @info "Skip loading $(pkg.name)"
+            continue
+        end
+
         @debug "Loading $pkg"
         mod = Base.require(pkg)
 
