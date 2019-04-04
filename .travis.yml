@@ -25,3 +25,6 @@ before_script:
 
 script:
   - make -C $TARGET
+
+after_script:
+  - cat $TARGET/Manifest.toml
