@@ -3,11 +3,17 @@
 [[Base64]]
 uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
 
+[[CSTParser]]
+deps = ["LibGit2", "Test", "Tokenize"]
+git-tree-sha1 = "437c93bc191cd55957b3f8dee7794b6131997c56"
+uuid = "00ebfdb7-1f24-5e51-bd34-a7502290713f"
+version = "0.5.2"
+
 [[CodeTracking]]
 deps = ["InteractiveUtils", "Test", "UUIDs"]
-git-tree-sha1 = "7e19dccd5667e0a8d9327ac76966977dbc0df85f"
+git-tree-sha1 = "fd9c4a8cf1c51516145b686981ee689524bcb458"
 uuid = "da1fd8a2-8d9e-5ec2-8556-3022fb5608a2"
-version = "0.5.0"
+version = "0.5.4"
 
 [[ColorTypes]]
 deps = ["FixedPointNumbers", "Random", "Test"]
@@ -57,9 +63,9 @@ uuid = "ade2ca70-3891-5945-98fb-dc099432e06a"
 
 [[Debugger]]
 deps = ["CodeTracking", "Crayons", "Highlights", "InteractiveUtils", "JuliaInterpreter", "Markdown", "REPL", "Test"]
-git-tree-sha1 = "15332eb3019aa7c8a3028e58408370c7312a9c38"
+git-tree-sha1 = "b04d5f2ebc8d98d6a336665e92a5c5e10da50e4f"
 uuid = "31a5f54b-26ea-5ae9-a837-f05ce5417438"
-version = "0.2.2"
+version = "0.3.0"
 
 [[DelimitedFiles]]
 deps = ["Mmap"]
@@ -125,10 +131,10 @@ uuid = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 version = "0.20.0"
 
 [[JuliaInterpreter]]
-deps = ["CodeTracking", "Dates", "Distributed", "InteractiveUtils", "Random", "SHA", "Test", "UUIDs"]
-git-tree-sha1 = "126d66c97171e676c3446f643ea159966d3ab10b"
+deps = ["CodeTracking", "Dates", "Distributed", "InteractiveUtils", "Mmap", "Random", "SHA", "Test", "UUIDs"]
+git-tree-sha1 = "9234d36f3837f0071e209ed338a01e48b1423940"
 uuid = "aa1ae85d-cabe-5617-a682-6adf51b2e16a"
-version = "0.3.2"
+version = "0.4.1"
 
 [[LibGit2]]
 uuid = "76f85450-5226-5b5a-8eaa-529ad045b433"
@@ -145,15 +151,15 @@ uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
 
 [[LoweredCodeUtils]]
 deps = ["JuliaInterpreter", "Test"]
-git-tree-sha1 = "51e3d512848f96e0017338e1e7e3485ee2730e6e"
+git-tree-sha1 = "6ab4d4f1c2ee5db423ada97ca7bec3081641321a"
 uuid = "6f1432cf-f94c-5a45-995e-cdbf5db27b0b"
-version = "0.3.0"
+version = "0.3.1"
 
 [[MacroTools]]
-deps = ["Compat"]
-git-tree-sha1 = "3fd1a3022952128935b449c33552eb65895380c1"
+deps = ["CSTParser", "Compat", "DataStructures", "Test"]
+git-tree-sha1 = "daecd9e452f38297c686eba90dba2a6d5da52162"
 uuid = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
-version = "0.4.5"
+version = "0.5.0"
 
 [[Markdown]]
 deps = ["Base64"]
@@ -198,9 +204,9 @@ version = "0.3.0"
 
 [[PlotUtils]]
 deps = ["Colors", "Dates", "Printf", "Random", "Reexport", "Test"]
-git-tree-sha1 = "c93a471a55fe44e8e6ef5c750769fee15334bccf"
+git-tree-sha1 = "5da9a79a138db46558e6e08f649865b4c1f1ce93"
 uuid = "995b91a9-d308-5afd-9ec6-746e21dbc043"
-version = "0.5.6"
+version = "0.5.7"
 
 [[Plots]]
 deps = ["Base64", "Contour", "Dates", "FixedPointNumbers", "GR", "JSON", "LinearAlgebra", "Measures", "NaNMath", "Pkg", "PlotThemes", "PlotUtils", "Printf", "REPL", "Random", "RecipesBase", "Reexport", "Requires", "Showoff", "SparseArrays", "StaticArrays", "Statistics", "StatsBase", "Test", "UUIDs"]
@@ -214,7 +220,7 @@ uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 
 [[PyCall]]
 deps = ["Conda", "Dates", "Libdl", "LinearAlgebra", "MacroTools", "Pkg", "Serialization", "Statistics", "Test", "VersionParsing"]
-git-tree-sha1 = "e69ce9ada460fd7c5d63b687075df2d2ea4cd201"
+git-tree-sha1 = "8f6db91d9f001af1b95b59f4425561013a5eb2cd"
 repo-rev = "master"
 repo-url = "https://github.com/JuliaPy/PyCall.jl.git"
 uuid = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
@@ -230,9 +236,9 @@ uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 
 [[Rebugger]]
 deps = ["CodeTracking", "HeaderREPLs", "InteractiveUtils", "JuliaInterpreter", "Pkg", "REPL", "Revise", "Test", "UUIDs"]
-git-tree-sha1 = "627b37f9fdee3c10b649ff61974f3e746b5e7b53"
+git-tree-sha1 = "c1105eadc6cb7d9db600737a026e06cae88fe6cf"
 uuid = "ee283ea6-eecd-56e3-beb3-83eb4d3c31e9"
-version = "0.3.0"
+version = "0.3.1"
 
 [[RecipesBase]]
 deps = ["Random", "Test"]
@@ -254,9 +260,9 @@ version = "0.5.2"
 
 [[Revise]]
 deps = ["CodeTracking", "Distributed", "FileWatching", "InteractiveUtils", "JuliaInterpreter", "LibGit2", "LoweredCodeUtils", "OrderedCollections", "Pkg", "REPL", "Random", "Test", "UUIDs", "Unicode"]
-git-tree-sha1 = "0af69424c7bfb3aaa3a7f31671f2c4d02facdf38"
+git-tree-sha1 = "b5ce22a031ee94e36d15eec6f4688db276f59b3a"
 uuid = "295af30f-e4ad-537b-8983-00126c2a3abe"
-version = "2.0.4"
+version = "2.0.6"
 
 [[SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
@@ -306,6 +312,12 @@ version = "0.29.0"
 [[Test]]
 deps = ["Distributed", "InteractiveUtils", "Logging", "Random"]
 uuid = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[[Tokenize]]
+deps = ["Printf", "Test"]
+git-tree-sha1 = "3e83f60b74911d3042d3550884ca2776386a02b8"
+uuid = "0796e94c-ce3b-5d07-9a54-7f471281c624"
+version = "0.5.3"
 
 [[UUIDs]]
 deps = ["Random", "SHA"]
