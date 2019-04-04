@@ -5,13 +5,16 @@ JULIA_CMD = $(JULIA) $(JULIA_OPTIONS) --startup-file=no
 O ?= build/$(shell $(JULIA_CMD) \
     -e 'print(VERSION.major, ".", VERSION.minor, ".", VERSION.patch)')
 
-.PHONY: build rebuild clean repl
+.PHONY: build rebuild update clean repl
 
 build: $(O)/sys.so
 
 rebuild:
 	rm -f $(O)/sys.so
 	$(MAKE) build
+
+update:
+	$(JULIA_CMD) --project=. -e 'using Pkg; Pkg.update()'
 
 clean:
 	rm -rfv $(O)
