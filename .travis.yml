@@ -12,10 +12,15 @@ addons:
       - python3-pip
       - python3-venv
 env:
-  - TARGET=python
-  - TARGET=plots
-  - TARGET=all
-  - TARGET=rebugger
+  # global:
+  #   - JULIA_DEBUG=Main,Base
+  matrix:
+    - TARGET=python
+    - TARGET=plots
+    - TARGET=all
+    - TARGET=rebugger
+    # - TARGET=diffeq
+    # - TARGET=makie
 matrix:
   allow_failures:
     - julia: nightly
