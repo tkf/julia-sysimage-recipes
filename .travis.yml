@@ -18,11 +18,12 @@ env:
     - TARGET=plots
     - TARGET=all
     - TARGET=rebugger
-    - TARGET=diffeq
+    - TARGET=diffeq GROUP=Integrators
     # - TARGET=makie
 matrix:
   allow_failures:
-    - env: TARGET=diffeq
+    - env: TARGET=diffeq GROUP=Integrators
+      # https://github.com/JuliaDiffEq/OrdinaryDiffEq.jl/blob/master/.travis.yml
   fast_finish: true
 notifications:
   email: false
