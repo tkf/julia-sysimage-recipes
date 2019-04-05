@@ -2,10 +2,13 @@ JULIA ?= $(shell which julia)
 JULIA_OPTIONS ?= --color=yes
 JULIA_CMD = $(JULIA) $(JULIA_OPTIONS) --startup-file=no
 
+JULIA_SYSIMAGE_CMD = \
+$$(cat $(O)/julia_executable) --sysimage $(O)/sys.so --startup-file=no
+
 O ?= build/$(shell $(JULIA_CMD) \
     -e 'print(VERSION.major, ".", VERSION.minor, ".", VERSION.patch)')
 
-.PHONY: build rebuild update clean dump-setup repl
+.PHONY: build rebuild update clean dump-setup test repl
 
 build: $(O)/sys.so
 
@@ -31,5 +34,11 @@ $(O)/Manifest.toml: Project.toml
 	-cp -t $(O) -v Manifest.toml
 	$(JULIA_CMD) --project=$(O) -e "using Pkg; Pkg.instantiate()"
 
+test.jl:
+	touch test.jl
+
+test: test.jl
+	$(JULIA_SYSIMAGE_CMD) test.jl
+
 repl:
-	$$(cat $(O)/julia_executable) --sysimage $(O)/sys.so --startup-file=no
+	$(JULIA_SYSIMAGE_CMD)
