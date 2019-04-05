@@ -5,6 +5,7 @@ JULIA_CMD = $(JULIA) $(JULIA_OPTIONS) --startup-file=no
 JULIA_SYSIMAGE_CMD = \
 $$(cat $(O)/julia_executable) --sysimage $(O)/sys.so \
 $(JULIA_OPTIONS) \
+--project=$(O) \
 --startup-file=no
 
 O ?= build/$(shell $(JULIA_CMD) \
