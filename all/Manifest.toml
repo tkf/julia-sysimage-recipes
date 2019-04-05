@@ -220,7 +220,7 @@ uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 
 [[PyCall]]
 deps = ["Conda", "Dates", "Libdl", "LinearAlgebra", "MacroTools", "Pkg", "Serialization", "Statistics", "Test", "VersionParsing"]
-git-tree-sha1 = "8f6db91d9f001af1b95b59f4425561013a5eb2cd"
+git-tree-sha1 = "e69ce9ada460fd7c5d63b687075df2d2ea4cd201"
 repo-rev = "master"
 repo-url = "https://github.com/JuliaPy/PyCall.jl.git"
 uuid = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
