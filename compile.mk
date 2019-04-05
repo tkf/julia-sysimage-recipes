@@ -3,7 +3,9 @@ JULIA_OPTIONS ?= --color=yes
 JULIA_CMD = $(JULIA) $(JULIA_OPTIONS) --startup-file=no
 
 JULIA_SYSIMAGE_CMD = \
-$$(cat $(O)/julia_executable) --sysimage $(O)/sys.so --startup-file=no
+$$(cat $(O)/julia_executable) --sysimage $(O)/sys.so \
+$(JULIA_OPTIONS) \
+--startup-file=no
 
 O ?= build/$(shell $(JULIA_CMD) \
     -e 'print(VERSION.major, ".", VERSION.minor, ".", VERSION.patch)')
