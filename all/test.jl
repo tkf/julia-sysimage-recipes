@@ -2,10 +2,10 @@ using Pkg
 Pkg.test([
     "Debugger"
     "GR"
-    "IPython"
+    # "IPython"
     "InteractiveCodeSearch"
     "Plots"
     "PyCall"
     # "Rebugger"
-    "Revise"
+    # "Revise"
 ])
