@@ -4,7 +4,7 @@ Pkg.test([
     "GR"
     # "IPython"
     "InteractiveCodeSearch"
-    "Plots"
+    # "Plots"
     "PyCall"
     # "Rebugger"
     # "Revise"
