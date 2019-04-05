@@ -25,6 +25,7 @@ before_script:
 
 script:
   - make -C $TARGET
+  - make -C $TARGET test
 
 after_script:
   - make -C $TARGET dump-setup
