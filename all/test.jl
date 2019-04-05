@@ -6,6 +6,6 @@ Pkg.test([
     "InteractiveCodeSearch"
     "Plots"
     "PyCall"
-    "Rebugger"
+    # "Rebugger"
     "Revise"
 ])
