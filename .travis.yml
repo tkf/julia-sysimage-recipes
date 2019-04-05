@@ -5,7 +5,6 @@ os:
   - linux
 julia:
   - 1.1
-  - nightly
 addons:
   apt:
     packages:
@@ -19,11 +18,11 @@ env:
     - TARGET=plots
     - TARGET=all
     - TARGET=rebugger
-    # - TARGET=diffeq
+    - TARGET=diffeq
     # - TARGET=makie
 matrix:
   allow_failures:
-    - julia: nightly
+    - env: TARGET=diffeq
   fast_finish: true
 notifications:
   email: false
