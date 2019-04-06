@@ -14,16 +14,14 @@ env:
   # global:
   #   - JULIA_DEBUG=Main,Base
   matrix:
-    - TARGET=python
-    - TARGET=plots
-    - TARGET=all
-    - TARGET=rebugger
+    - TARGET=diffeq GROUP=Interface
     - TARGET=diffeq GROUP=Integrators
+    - TARGET=diffeq GROUP=Regression
+    - TARGET=diffeq GROUP=AlgConvergence_I
+    - TARGET=diffeq GROUP=AlgConvergence_II
+    - TARGET=diffeq GROUP=AlgConvergence_III
     # - TARGET=makie
 matrix:
-  allow_failures:
-    - env: TARGET=diffeq GROUP=Integrators
-      # https://github.com/JuliaDiffEq/OrdinaryDiffEq.jl/blob/master/.travis.yml
   fast_finish: true
 notifications:
   email: false
