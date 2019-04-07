@@ -14,6 +14,7 @@ env:
   # global:
   #   - JULIA_DEBUG=Main,Base
   matrix:
+    - TARGET=all2
     - TARGET=python
     - TARGET=plots
     - TARGET=all
