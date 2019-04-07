@@ -15,7 +15,7 @@ Currently, following "recipes" are [tested][travis-url].
 
 * `rebugger`: Rebugger and Revise
 
-* `diffeq`: OrdinaryDiffEq
+* `diffeq`: OrdinaryDiffEq etc.
 
 Look at `$RECIPE_DIR/Project.toml` (e.g.,
 [`all/Project.toml`](all/Project.toml)) and also corresponding
