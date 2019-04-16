@@ -1,7 +1,7 @@
 JULIA ?= $(shell which julia)
 RECIPES = all all2 python plots diffeq
 
-.PHONY: build* rebuild* clean* $(RECIPES)
+.PHONY: build* rebuild* clean* update* $(RECIPES)
 
 build: $(patsubst %, build-%, $(RECIPES))
 build-%:
@@ -10,6 +10,10 @@ build-%:
 rebuild: $(patsubst %, rebuild-%, $(RECIPES))
 rebuild-%:
 	$(MAKE) -C $* rebuild
+
+update: $(patsubst %, update-%, $(RECIPES))
+update-%:
+	$(MAKE) -C $* update
 
 clean: $(patsubst %, clean-%, $(RECIPES))
 clean-%:
