@@ -201,10 +201,10 @@ uuid = "eafb193a-b7ab-5a9e-9068-77385905fa72"
 version = "0.3.1"
 
 [[IPython]]
-deps = ["Compat", "Conda", "InteractiveUtils", "Pkg", "PyCall", "REPL", "Test", "Unicode"]
-git-tree-sha1 = "8d648a84eca67a5080180cc5ad326c0c75c7067a"
+deps = ["Compat", "Conda", "InteractiveUtils", "PyCall", "REPL"]
+git-tree-sha1 = "98138332a926ef6e0025806d40b64076cb291d03"
 uuid = "18364772-b071-5c00-bfd7-ceeaffab630a"
-version = "0.4.1"
+version = "0.5.0"
 
 [[InteractiveCodeSearch]]
 deps = ["InteractiveUtils", "LinearAlgebra", "Markdown", "Pkg", "REPL", "SparseArrays", "Test"]
