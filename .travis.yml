@@ -32,7 +32,7 @@ notifications:
 before_script:
   - julia --color=yes -e '
     using Pkg;
-    Pkg.add("PackageCompiler")
+    pkg"add PackageCompiler#54c0c1255227c8a94de402b41e05d22ea98b5013"
     '
 
 script:
