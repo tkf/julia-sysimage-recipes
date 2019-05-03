@@ -233,10 +233,10 @@ deps = ["Serialization"]
 uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 
 [[Rebugger]]
-deps = ["CodeTracking", "HeaderREPLs", "InteractiveUtils", "JuliaInterpreter", "Pkg", "REPL", "Revise", "Test", "UUIDs"]
-git-tree-sha1 = "c1105eadc6cb7d9db600737a026e06cae88fe6cf"
+deps = ["CodeTracking", "HeaderREPLs", "InteractiveUtils", "JuliaInterpreter", "REPL", "Revise", "UUIDs"]
+git-tree-sha1 = "1810b4692fafb29716e4b9fe0fcf4ede878e5c61"
 uuid = "ee283ea6-eecd-56e3-beb3-83eb4d3c31e9"
-version = "0.3.1"
+version = "0.3.2"
 
 [[RecipesBase]]
 deps = ["Random", "Test"]
