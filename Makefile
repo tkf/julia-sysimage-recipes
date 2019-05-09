@@ -1,5 +1,5 @@
 JULIA ?= $(shell which julia)
-RECIPES = all all2 python plots diffeq
+RECIPES = all all2 python plots diffeq rebugger
 
 .PHONY: build* rebuild* clean* update* $(RECIPES)
 
