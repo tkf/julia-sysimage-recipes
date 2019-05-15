@@ -1,1 +1,1 @@
-include ../lib/compile.mk
+include lib/compile.mk
