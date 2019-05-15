@@ -13,31 +13,21 @@ addons:
 env:
   # global:
   #   - JULIA_DEBUG=Main,Base
-  matrix:
-    - TARGET=all2
-    - TARGET=python
-    - TARGET=plots
-    - TARGET=all
-    - TARGET=rebugger
-    - TARGET=diffeq GROUP=Integrators
-    # - TARGET=makie
 matrix:
-  allow_failures:
-    - env: TARGET=diffeq GROUP=Integrators
-      # https://github.com/JuliaDiffEq/OrdinaryDiffEq.jl/blob/master/.travis.yml
   fast_finish: true
 notifications:
   email: false
 
 before_script:
+  - unset JULIA_PROJECT
   - julia --color=yes -e '
     using Pkg;
     pkg"add PackageCompiler#54c0c1255227c8a94de402b41e05d22ea98b5013"
     '
 
 script:
-  - make -C $TARGET
-  - make -C $TARGET test
+  - make
+  - make test
 
 after_script:
-  - make -C $TARGET dump-setup
+  - make dump-setup

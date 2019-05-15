@@ -6,7 +6,7 @@ using PackageCompiler
 _toml, precompile = PackageCompiler.snoop_packages(:Makie, :AbstractPlotting)
 
 wrapper = joinpath(@__DIR__, "build", "precompile_wrapper-$VERSION.jl")
-preamble = joinpath(@__DIR__, "..", "lib", "precompile_preamble.jl")
+preamble = joinpath(@__DIR__, "lib", "precompile_preamble.jl")
 write(wrapper, """
 Base.include(Main, $(repr(preamble)))
 Base.include(Main, $(repr(precompile)))
