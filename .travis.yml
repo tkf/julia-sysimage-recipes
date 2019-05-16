@@ -1,0 +1,19 @@
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+dist: xenial
+os:
+  - linux
+julia:
+  - 1.1
+env:
+  # global:
+  #   - JULIA_DEBUG=Main,Base
+matrix:
+  fast_finish: true
+notifications:
+  email: false
+
+script:
+  - git remote set-branches origin '*'
+  - git fetch -v
+  - make
