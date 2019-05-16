@@ -1,6 +1,8 @@
 sysout, = ARGS
 outdir = dirname(sysout)
 
+include("download.jl")
+
 using PackageCompiler
 
 systmp, _curr_syso = compile_incremental(
