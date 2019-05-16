@@ -1,3 +1,4 @@
 [deps]
 IPython = "18364772-b071-5c00-bfd7-ceeaffab630a"
+Pandas = "eadc2687-ae89-51f9-a5d9-86b5a6373a9c"
 PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
