@@ -12,7 +12,7 @@ function genreadme(io, lines)
     println(io, "| --- | --- | --- |")
     for recipe in RECIPES
         recipelink = "[`$recipe`](https://github.com/tkf/julia-sysimage-recipes/tree/$recipe/master)"
-        travis = "[![Build Status](https://travis-ci.com/tkf/julia-sysimage-recipes.svg?branch=$recipe/master)](https://travis-ci.com/tkf/julia-sysimage-recipes)"
+        travis = "[![Build Status](https://travis-ci.com/tkf/julia-sysimage-recipes.svg?branch=$recipe/master)](https://travis-ci.com/tkf/julia-sysimage-recipes/branches)"
         project = "[`Project.toml`](https://github.com/tkf/julia-sysimage-recipes/blob/$recipe/master/Project.toml)"
         println(io, "| $recipelink | $travis | $project |")
     end
