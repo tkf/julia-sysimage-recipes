@@ -1,4 +1,4 @@
-RECIPES = all/ all2/ diffeq/ makie/ plots/ python/ rebugger/
+RECIPES = all/ all2/ data/ diffeq/ makie/ plots/ python/ rebugger/
 
 .PHONY: checkout
 
