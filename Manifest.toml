@@ -60,10 +60,10 @@ deps = ["Mmap"]
 uuid = "8bb1440f-4735-579b-a4ab-409b98df4dab"
 
 [[DiffEqBase]]
-deps = ["Compat", "DocStringExtensions", "IterativeSolvers", "IteratorInterfaceExtensions", "LinearAlgebra", "RecipesBase", "RecursiveArrayTools", "RecursiveFactorization", "Requires", "Roots", "SparseArrays", "StaticArrays", "Statistics", "SuiteSparse", "TableTraits", "TreeViews"]
-git-tree-sha1 = "c4560b4ae808770bc58a31f8c796b3f195e6239a"
+deps = ["Compat", "DocStringExtensions", "IterativeSolvers", "IteratorInterfaceExtensions", "LinearAlgebra", "MuladdMacro", "Parameters", "RecipesBase", "RecursiveArrayTools", "RecursiveFactorization", "Requires", "Roots", "SparseArrays", "StaticArrays", "Statistics", "SuiteSparse", "TableTraits", "TreeViews"]
+git-tree-sha1 = "4dcb0ae5060a4493159903ab79080bb44a6c184d"
 uuid = "2b5f629d-d688-5b77-993f-72d75c75574e"
-version = "5.7.0"
+version = "5.8.0"
 
 [[DiffEqDiffTools]]
 deps = ["LinearAlgebra", "Test"]
@@ -202,9 +202,9 @@ version = "1.1.0"
 
 [[OrdinaryDiffEq]]
 deps = ["DataStructures", "DiffEqBase", "DiffEqDiffTools", "DiffEqOperators", "ExponentialUtilities", "ForwardDiff", "GenericSVD", "LinearAlgebra", "Logging", "MuladdMacro", "NLsolve", "Parameters", "RecursiveArrayTools", "Reexport", "StaticArrays"]
-git-tree-sha1 = "ba5dce61ef10d064301f90b866f0467497d521ee"
+git-tree-sha1 = "303576079177e7e2675b5597ccaf65fd9980d092"
 uuid = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"
-version = "5.6.0"
+version = "5.6.1"
 
 [[Parameters]]
 deps = ["Markdown", "OrderedCollections", "REPL", "Test"]
