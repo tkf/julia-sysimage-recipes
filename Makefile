@@ -30,6 +30,7 @@ commit-update-%: check-git-clean-%
 	-git -C $* commit --all --message 'Update */Manifest.toml'
 
 check-git-clean-%:
+	git -C $* status
 	git -C $* status --short --untracked-files=no | xargs --no-run-if-empty false
 
 clean: $(patsubst %, clean-%, $(RECIPES))
