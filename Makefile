@@ -35,3 +35,7 @@ check-git-clean-%:
 clean: $(patsubst %, clean-%, $(RECIPES))
 clean-%:
 	$(MAKE) -C $* clean
+
+git-status: $(patsubst %, git-status-%, $(RECIPES))
+git-status-%:
+	git -C $* status --short --branch
