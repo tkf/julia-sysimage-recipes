@@ -1,13 +1,16 @@
 RECIPES = all all2 data diffeq makie plots python rebugger
 RECIPE_BRANCH = master
 
-.PHONY: checkout build* rebuild* clean* update*
+.PHONY: checkout worktree* build* rebuild* clean* update*
 
 checkout: $(RECIPES)
 
 $(RECIPES): %:
 	git worktree add -b $*/$(RECIPE_BRANCH) $@ origin/$*/$(RECIPE_BRANCH)
-	# git worktree add $@ $*/$(RECIPE_BRANCH)
+
+worktree: $(patsubst %, worktree-%, $(RECIPES))
+worktree-%:
+	git worktree add $* $*/$(RECIPE_BRANCH)
 
 build: $(patsubst %, build-%, $(RECIPES))
 build-%:
