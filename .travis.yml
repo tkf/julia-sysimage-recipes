@@ -18,3 +18,4 @@ script:
   - git fetch -v
   - make
   - make update
+  - make commit-update
