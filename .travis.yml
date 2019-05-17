@@ -17,5 +17,4 @@ script:
   - git remote set-branches origin '*'
   - git fetch -v
   - make
-  - make update
   - make commit-update
