@@ -27,7 +27,7 @@ update-%:
 commit-update: $(patsubst %, commit-update-%, $(RECIPES))
 commit-update-%: check-git-clean-%
 	$(MAKE) -C $* update
-	-git -C $* commit --all --message 'Update */Manifest.toml'
+	-git -C $* commit --all --message 'Update Manifest.toml'
 
 check-git-clean-%:
 	git -C $* status
