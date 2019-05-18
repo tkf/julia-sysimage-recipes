@@ -1,4 +1,4 @@
-RECIPES = all all2 data diffeq makie plots python rebugger
+RECIPES = all all2 data diffeq makie pandas plots python rebugger
 RECIPE_BRANCH = master
 
 .PHONY: checkout worktree* build* rebuild* clean* update*
