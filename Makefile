@@ -26,6 +26,9 @@ update-%:
 
 commit-update: $(patsubst %, commit-update-%, $(RECIPES))
 commit-update-%: check-git-clean-%
+	git -C $* fetch origin
+	git -C $* merge --ff-only origin/$*/$(RECIPE_BRANCH)
+	git -C $* merge --ff-only origin/$*/master
 	$(MAKE) -C $* update
 	-git -C $* commit --all --message 'Update Manifest.toml'
 
