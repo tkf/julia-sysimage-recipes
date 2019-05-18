@@ -1,7 +1,6 @@
 using Pkg
-Pkg.test(["PyCall"])
-try
-    Pkg.test("IPython")
-catch exception
-    @error "Ignoring IPython test failures" exception
-end
+Pkg.test(["Pandas"])
+
+# Note: Testing PyCall will fail when Pandas is compiled into system
+# image.  This is because Pandas fails when Python modules pandas and
+# numpy are not found.  It happens during virtual environment tests.
