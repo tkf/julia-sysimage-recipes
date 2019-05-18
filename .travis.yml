@@ -25,6 +25,12 @@ before_script:
     pkg"add PackageCompiler#54c0c1255227c8a94de402b41e05d22ea98b5013"
     '
 
+  # See: https://github.com/JuliaPy/Pandas.jl/blob/v1.3.0/.travis.yml
+  - pip3 install --user --upgrade pip
+  - pip --version
+  - pip install --user pandas
+  - pip install --user tables
+
 script:
   - make
   - make test

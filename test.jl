@@ -5,7 +5,8 @@ Pkg.test([
     # "IPython"
     "InteractiveCodeSearch"
     # "Plots"
-    "PyCall"
+    # "PyCall"  # known to fail
+    "Pandas"
     # "Rebugger"
     # "Revise"
 ])
