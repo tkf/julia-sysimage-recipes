@@ -1,7 +1,7 @@
 RECIPES = all all2 data diffeq makie pandas plots python rebugger
 RECIPE_BRANCH = master
 
-.PHONY: checkout worktree* build* rebuild* clean* update*
+.PHONY: checkout worktree* build* rebuild* clean* update* git-*
 
 checkout: $(RECIPES)
 
@@ -43,6 +43,14 @@ clean-%:
 git-status: $(patsubst %, git-status-%, $(RECIPES))
 git-status-%:
 	git -C $* status --short --branch
+
+git-log: $(patsubst %, git-log-%, $(RECIPES))
+git-log-%:
+	git -C $* --no-pager log --graph --oneline 'HEAD@{upstream}..HEAD'
+
+git-push: $(patsubst %, git-push-%, $(RECIPES))
+git-push-%:
+	git -C $* push #--dry-run
 
 README.md: genreadme.jl
 	julia --startup-file=no genreadme.jl
