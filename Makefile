@@ -40,3 +40,6 @@ clean-%:
 git-status: $(patsubst %, git-status-%, $(RECIPES))
 git-status-%:
 	git -C $* status --short --branch
+
+README.md: genreadme.jl
+	julia --startup-file=no genreadme.jl
