@@ -410,8 +410,10 @@ deps = ["Unicode"]
 uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 
 [[PyCall]]
-deps = ["Conda", "Dates", "Libdl", "LinearAlgebra", "MacroTools", "Pkg", "Serialization", "Statistics", "Test", "VersionParsing"]
-git-tree-sha1 = "6e5bac1b1faf3575731a6a5b76f638f2389561d3"
+deps = ["Conda", "Dates", "Libdl", "LinearAlgebra", "MacroTools", "Serialization", "VersionParsing"]
+git-tree-sha1 = "a1eda085bd2a4981400311e29475886c9ff552e6"
+repo-rev = "aot-numpy"
+repo-url = "https://github.com/tkf/PyCall.jl"
 uuid = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
 version = "1.91.2"
 
