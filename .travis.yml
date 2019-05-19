@@ -11,6 +11,7 @@ addons:
       - ffmpeg
       - cmake
       - xorg-dev
+      - libglfw3
 env:
   # global:
   #   - JULIA_DEBUG=Main,Base
