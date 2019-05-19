@@ -52,5 +52,9 @@ git-push: $(patsubst %, git-push-%, $(RECIPES))
 git-push-%:
 	git -C $* push #--dry-run
 
+git-pull: $(patsubst %, git-pull-%, $(RECIPES))
+git-pull-%:
+	git -C $* pull --ff-only
+
 README.md: genreadme.jl
 	julia --startup-file=no genreadme.jl
