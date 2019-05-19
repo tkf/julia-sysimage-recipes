@@ -5,6 +5,12 @@ os:
   - linux
 julia:
   - 1.1
+addons:
+  apt:
+    packages:
+      - ffmpeg
+      - cmake
+      - xorg-dev
 env:
   # global:
   #   - JULIA_DEBUG=Main,Base
