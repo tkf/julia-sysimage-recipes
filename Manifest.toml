@@ -128,9 +128,11 @@ version = "1.1.0"
 
 [[Pandas]]
 deps = ["Compat", "DataValues", "IteratorInterfaceExtensions", "Lazy", "Pkg", "PyCall", "Statistics", "TableTraits", "TableTraitsUtils", "Test"]
-git-tree-sha1 = "28b004d3c71a676675f4518d2cc30cbdde7d2a73"
+git-tree-sha1 = "d35b31eefc1bdd6831945aa3969be9866fcb63cc"
+repo-rev = "aot"
+repo-url = "https://github.com/tkf/Pandas.jl"
 uuid = "eadc2687-ae89-51f9-a5d9-86b5a6373a9c"
-version = "1.3.0"
+version = "1.3.0+"
 
 [[Pkg]]
 deps = ["Dates", "LibGit2", "Markdown", "Printf", "REPL", "Random", "SHA", "UUIDs"]
