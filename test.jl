@@ -3,4 +3,5 @@ Pkg.test([
     "DataFrames"
     "VegaLite"
     "VegaDatasets"
+    "Gadfly"
 ])
