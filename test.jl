@@ -1,2 +1,6 @@
 using Pkg
-Pkg.test(["DataFrames"])
+Pkg.test([
+    "DataFrames"
+    "VegaLite"
+    "VegaDatasets"
+])
