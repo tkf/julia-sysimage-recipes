@@ -104,6 +104,7 @@ function loade_all_packages(tomlpath=nothing)
         if !Sys.isapple()
             if pkg.name in [
                     "Homebrew"
+                    "QuartzImageIO"
                     ]
                 @info "!isapple: Skip loading $(pkg.name)"
                 continue
