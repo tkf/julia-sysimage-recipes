@@ -12,6 +12,8 @@ addons:
       - cmake
       - xorg-dev
       - libglfw3
+services:
+  - xvfb
 env:
   # global:
   #   - JULIA_DEBUG=Main,Base
