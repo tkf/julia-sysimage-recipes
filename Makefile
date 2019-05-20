@@ -1,7 +1,7 @@
 RECIPES = all all2 data diffeq makie pandas plots python rebugger
 RECIPE_BRANCH = master
 
-.PHONY: checkout worktree* build* rebuild* clean* update* git-*
+.PHONY: checkout worktree* build* rebuild* clean* update* git-* pull-lib*
 
 checkout: $(RECIPES)
 
@@ -55,6 +55,13 @@ git-push-%:
 git-pull: $(patsubst %, git-pull-%, $(RECIPES))
 git-pull-%:
 	git -C $* pull --ff-only
+
+pull-lib: $(patsubst %, pull-lib-%, $(RECIPES))
+pull-lib-%:
+	git -C $* subtree pull \
+--message "Merge 'lib' subtree" \
+--prefix lib origin lib/master
+# Using `--message` for avoiding to open editor.
 
 README.md: genreadme.jl
 	julia --startup-file=no genreadme.jl
