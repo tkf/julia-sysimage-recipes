@@ -6,15 +6,16 @@ os:
 julia:
   - 1.1
 env:
-  # global:
-  #   - JULIA_DEBUG=Main,Base
-  matrix:
-    - GROUP=Interface
+  global:
     - GROUP=Integrators
-    - GROUP=Regression
-    - GROUP=AlgConvergence_I
-    - GROUP=AlgConvergence_II
-    - GROUP=AlgConvergence_III
+  #   - JULIA_DEBUG=Main,Base
+  # matrix:
+  #   - GROUP=Interface
+  #   - GROUP=Integrators
+  #   - GROUP=Regression
+  #   - GROUP=AlgConvergence_I
+  #   - GROUP=AlgConvergence_II
+  #   - GROUP=AlgConvergence_III
   # See:
   # https://github.com/JuliaDiffEq/OrdinaryDiffEq.jl/blob/master/.travis.yml
 matrix:
