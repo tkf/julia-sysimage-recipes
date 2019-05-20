@@ -95,9 +95,20 @@ function loade_all_packages(tomlpath=nothing)
     for pkg in sorted_packages(tomlpath)
         if pkg.name in [
                 "DiffBase"
+                "HTTPClient"
+                "WinRPM"
                 ]
             @info "Skip loading $(pkg.name)"
             continue
+        end
+        if !Sys.isapple()
+            if pkg.name in [
+                    "Homebrew"
+                    "QuartzImageIO"
+                    ]
+                @info "!isapple: Skip loading $(pkg.name)"
+                continue
+            end
         end
 
         @debug "Loading $pkg"
