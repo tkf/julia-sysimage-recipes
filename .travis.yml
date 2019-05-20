@@ -8,6 +8,15 @@ julia:
 env:
   # global:
   #   - JULIA_DEBUG=Main,Base
+  matrix:
+    - GROUP=Interface
+    - GROUP=Integrators
+    - GROUP=Regression
+    - GROUP=AlgConvergence_I
+    - GROUP=AlgConvergence_II
+    - GROUP=AlgConvergence_III
+  # See:
+  # https://github.com/JuliaDiffEq/OrdinaryDiffEq.jl/blob/master/.travis.yml
 matrix:
   fast_finish: true
 notifications:
