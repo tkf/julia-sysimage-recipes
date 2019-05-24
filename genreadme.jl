@@ -4,6 +4,7 @@ RECIPES = [
     "base"
     "data"
     "diffeq"
+    "flux-cpu"
     "pandas"
     "plots"
     "python"
