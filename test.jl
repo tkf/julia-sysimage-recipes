@@ -9,4 +9,7 @@ Pkg.test([
     "Pandas"
     # "Rebugger"
     # "Revise"
+    "DataFrames"
+    "VegaLite"
+    "VegaDatasets"
 ])
