@@ -1,4 +1,14 @@
-RECIPES = ["all", "all2", "data", "pandas", "plots", "python", "rebugger", "diffeq"]
+RECIPES = [
+    "all"
+    "all2"
+    "base"
+    "data"
+    "diffeq"
+    "pandas"
+    "plots"
+    "python"
+    "rebugger"
+]
 
 function genreadme(io, lines)
     tablestart = findfirst(x -> x == "<!-- table start -->", lines)

@@ -1,4 +1,4 @@
-RECIPES = all all2 data diffeq pandas plots python rebugger
+RECIPES = all all2 base data diffeq pandas plots python rebugger
 RECIPE_BRANCH = master
 
 .PHONY: checkout worktree* build* rebuild* clean* update* git-* pull-lib*
