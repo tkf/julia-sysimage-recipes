@@ -411,9 +411,9 @@ uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 
 [[PyCall]]
 deps = ["Conda", "Dates", "Libdl", "LinearAlgebra", "MacroTools", "Serialization", "VersionParsing"]
-git-tree-sha1 = "a1eda085bd2a4981400311e29475886c9ff552e6"
-repo-rev = "aot-numpy"
-repo-url = "https://github.com/tkf/PyCall.jl"
+git-tree-sha1 = "8af45a1197140f4eb1ad3bd1e72043be818cf785"
+repo-rev = "master"
+repo-url = "https://github.com/JuliaPy/PyCall.jl.git"
 uuid = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
 version = "1.91.2"
 
