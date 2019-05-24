@@ -97,10 +97,9 @@ version = "0.7.0"
 uuid = "7b1f6079-737a-58dc-b8bc-7a2ca5c1b5ee"
 
 [[FixedPointNumbers]]
-deps = ["Test"]
-git-tree-sha1 = "b8045033701c3b10bf2324d7203404be7aef88ba"
+git-tree-sha1 = "d14a6fa5890ea3a7e5dcab6811114f132fec2b4b"
 uuid = "53c48c17-4a7d-5ca2-90c5-79b7896eea93"
-version = "0.5.3"
+version = "0.6.1"
 
 [[Future]]
 deps = ["Random"]
@@ -113,10 +112,10 @@ uuid = "28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71"
 version = "0.39.1"
 
 [[GeometryTypes]]
-deps = ["ColorTypes", "FixedPointNumbers", "IterTools", "LinearAlgebra", "StaticArrays", "Test"]
-git-tree-sha1 = "a9bc71d5a7eb971b61db353eb66c4a1de0551d8c"
+deps = ["ColorTypes", "FixedPointNumbers", "IterTools", "LinearAlgebra", "StaticArrays"]
+git-tree-sha1 = "05796e9ac5a8fb8adfdcdf842fb8737d1cb5924e"
 uuid = "4d00f742-c7ba-57c2-abde-4428a4b178cb"
-version = "0.7.3"
+version = "0.7.4"
 
 [[HeaderREPLs]]
 deps = ["REPL", "Test"]
@@ -297,9 +296,9 @@ version = "0.5.2"
 
 [[Revise]]
 deps = ["CodeTracking", "Distributed", "FileWatching", "JuliaInterpreter", "LibGit2", "LoweredCodeUtils", "OrderedCollections", "Pkg", "REPL", "UUIDs", "Unicode"]
-git-tree-sha1 = "f4cd86477685d5095f8cbce2a47f69ae9cf5c963"
+git-tree-sha1 = "0148fc4b3392778e09eb75c4971ce75424acd1d1"
 uuid = "295af30f-e4ad-537b-8983-00126c2a3abe"
-version = "2.1.4"
+version = "2.1.5"
 
 [[SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
