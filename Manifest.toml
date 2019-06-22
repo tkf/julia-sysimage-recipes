@@ -106,10 +106,10 @@ uuid = "ffbed154-4ef7-542d-bbb7-c09d3a79fcae"
 version = "0.7.0"
 
 [[ExponentialUtilities]]
-deps = ["LinearAlgebra", "Printf", "Random", "SparseArrays", "Test"]
-git-tree-sha1 = "6fad21cd7637d0ad6a7661f8abea1149922d6c9c"
+deps = ["LinearAlgebra", "Printf", "SparseArrays"]
+git-tree-sha1 = "d361793944a554d8aeeaaf619b92a45495d75685"
 uuid = "d4d017d3-3776-5f7e-afef-a10c40355c18"
-version = "1.4.0"
+version = "1.5.0"
 
 [[ForwardDiff]]
 deps = ["CommonSubexpressions", "DiffResults", "DiffRules", "InteractiveUtils", "LinearAlgebra", "NaNMath", "Random", "SparseArrays", "SpecialFunctions", "StaticArrays", "Test"]
